@@ -18,7 +18,7 @@ const eslintConfig = [
       "@typescript-eslint/no-empty-object-type": [
         "error",
         {
-          allowObject: true,
+          allowObjectTypes: true,
         },
       ],
     },
