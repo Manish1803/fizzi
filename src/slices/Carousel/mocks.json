@@ -1,0 +1,31 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Piano"
+						}
+					}
+				]
+			},
+			"price_copy": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit ex sunt aliquip adipisicing proident Lorem aliquip quis dolore Lorem et. Veniam officia consectetur fugiat ut sint commodo nostrud ut."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
