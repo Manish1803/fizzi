@@ -12,9 +12,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 import FloatingCan from "@/components/FloatingCan";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
-type Props = {};
-
-export default function Scene({}: Props) {
+export default function Scene() {
   const canRef = useRef<Group>(null);
   const isDesktop = useMediaQuery("(min-width: 760px)", true);
 

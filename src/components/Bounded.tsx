@@ -1,28 +1,23 @@
-import React from "react";
 import clsx from "clsx";
 
-type BoundedProps<T extends React.ElementType> = {
-  as?: T;
+type BoundedProps = {
   className?: string;
   children: React.ReactNode;
-} & Omit<React.ComponentPropsWithRef<T>, "as" | "className" | "children">;
+};
 
-export function Bounded<T extends React.ElementType = "section">({
-  as,
+export const Bounded = ({
   className,
   children,
   ...restProps
-}: BoundedProps<T>) {
-  const Component = as || "section";
-
+}: BoundedProps) => {
   return (
-    <Component
+    <section
       className={clsx("px-4 first:pt-10 md:px-6", className)}
-      {...(restProps as React.ComponentPropsWithRef<T>)}
+      {...restProps}
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
         {children}
       </div>
-    </Component>
+    </section>
   );
-}
+};

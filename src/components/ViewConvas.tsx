@@ -10,9 +10,7 @@ const Loader = dynamic(
   { ssr: false },
 );
 
-type Props = {};
-
-export default function ViewConvas({}: Props) {
+export default function ViewConvas() {
   return (
     <>
       <Canvas
